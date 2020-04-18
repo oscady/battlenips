@@ -6,6 +6,7 @@
   min-height: 100vh;
   font-family: monospace;
   background-color: #491759;
+  min-width: 1000px;
 }
 
 .App-logo {
@@ -28,6 +29,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  min-width: 700px;
 }
 
 .App-link {

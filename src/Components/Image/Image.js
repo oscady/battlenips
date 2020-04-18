@@ -25,7 +25,8 @@ export default (props) => (
     alignItems: "center",
     margin: "0 auto",
     backgroundColor: "white",
-    opacity: 0.8
+    opacity: 0.8,
+    marginBottom: "100px"
   } }>
     <div
       id="capture"
@@ -41,6 +42,7 @@ export default (props) => (
         backgroundSize: `${props.imageScale}%`
       } }
     >
+
       <Rnd
         default={ {
           x: 0,
@@ -59,5 +61,5 @@ export default (props) => (
           background={ props.background } />
       </Rnd>
     </div>
-  </div>
+  </div >
 );

@@ -17,7 +17,7 @@ export const PanelItemStyled = styled.div`
   h2 {
     color: #e2e2e2;
     opacity: 0.8;
-    font-size: 1.5vw;
+    font-size: 12px;
     white-space: nowrap;
   }
 `;

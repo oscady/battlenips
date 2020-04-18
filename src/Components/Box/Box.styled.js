@@ -18,5 +18,6 @@ export const BoxStyled = styled.div`
    background-color: transparent;
    color: black;
    font-size: ${props => props.fontSize};
+
  }
 `;

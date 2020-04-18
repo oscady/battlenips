@@ -19,8 +19,8 @@ class MainSection extends Component {
       background: null,
       backgroundHeight: "auto",
       backgroundWidth: "auto",
-      imageHeight: 680,
-      imageWidth: 1000,
+      imageHeight: 800,
+      imageWidth: 900,
       backgroundX: 0,
       backgroundY: 0,
       imageScale: 100
