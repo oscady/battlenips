@@ -8,5 +8,5 @@ export const MainSectionStyled = styled.div`
  flex-direction: column;
  align-items: center;
  justify-content: center;
- margin: 50px 0px 50px 0px;
+ margin: 0;
 `;
