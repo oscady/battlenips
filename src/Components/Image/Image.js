@@ -26,16 +26,14 @@ export default (props) => (
     margin: "0 auto",
     backgroundColor: "white",
     opacity: 0.8,
-    marginBottom: "100px"
   } }>
     <div
       id="capture"
       style={ {
-        margin: "0 auto",
+        margin: "0",
         backgroundImage: `url(${props.background})`,
         width: `${props.imageWidth}px`,
         height: `${props.imageHeight}px`,
-        minHeight: "1px",
         border: "1px solid black",
         backgroundRepeat: "no-repeat",
         backgroundPosition: `${props.backgroundX}%` + " " + `${props.backgroundY}%`,
