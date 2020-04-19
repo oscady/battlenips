@@ -108,13 +108,13 @@ class Body extends Component {
       this.setState({ opacityValue: 1 });
     };
     html2canvas(document.querySelector("#capture"), { logging: true, letterRendering: 1, allowTaint: false, useCORS: true }).then(canvas => {
-      saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-question.jpeg' + (new Date).getTime());
+      saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-answer.jpeg' + (new Date).getTime());
     })
       .then(function () {
         opacit();
       }).then(function () {
         html2canvas(document.querySelector("#capture"), { logging: true, letterRendering: 1, allowTaint: false, useCORS: true }).then(canvas => {
-          saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-answer.jpeg' + (new Date).getTime());
+          saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-question.jpeg' + (new Date).getTime());
         });
       });
   };
