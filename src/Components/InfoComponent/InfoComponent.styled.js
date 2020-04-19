@@ -12,6 +12,10 @@ export const InfoComponentStyled = styled.div`
   justify-content: center;
   background-color: #E5D0D0;
 
+  @media(max-width: 900px) {
+    padding:15px;
+  }
+
 }
   div {
     height: auto;
@@ -37,5 +41,9 @@ export const InfoComponentStyled = styled.div`
     line-height: 1.6;
     text-align: left;
     margin-bottom: 10px;
+
+    @media(max-width: 900px) {
+      font-size: 14px;
+    }
   }
 `;
