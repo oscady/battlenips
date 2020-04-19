@@ -11,16 +11,16 @@ export const StyledTitle = styled.h3`
   margin: 0 auto;
   position: absolute;
   top:0;
-  left:0;
-  right:0;
+  left:15px;
   color: #e2e2e2;
   z-index: 11;
 
-  @media (min-width: 899px) {
+  @media (max-width: 900px) {
     width: 200px;
     position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
-    left: 5px;
     padding: 0px;
     z-index: 11;
   }
