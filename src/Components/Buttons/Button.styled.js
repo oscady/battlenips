@@ -14,5 +14,9 @@ export const ButtonStyled = styled.div`
     font-size: 20px;
     font-weight: bold;
     width: 180px;
+    margin: 5px;
+    @media(max-width: 900px) {
+      margin-top: 10px
+    }
   }
 `;

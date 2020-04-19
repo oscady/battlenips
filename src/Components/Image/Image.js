@@ -1,6 +1,7 @@
 import React from "react";
 import { Rnd } from "react-rnd";
 import Box from "../Box/Box";
+import fitty from 'fitty';
 
 const MoveyBox = props => (
   <div
@@ -9,6 +10,7 @@ const MoveyBox = props => (
       margin: 0,
       height: "100%",
       padding: "0",
+      objectFit: "contain",
       backgroundColor: `rgba(250,250,250,${props.opacity})`,
       visibility: `${props.background === null ? 'hidden' : 'visible'}`
     } }
@@ -24,8 +26,8 @@ export default (props) => (
     justifyContent: "center",
     alignItems: "center",
     margin: "0 auto",
-    backgroundColor: "white",
     opacity: 0.8,
+
   } }>
     <div
       id="capture"
@@ -34,6 +36,8 @@ export default (props) => (
         backgroundImage: `url(${props.background})`,
         width: `${props.imageWidth}px`,
         height: `${props.imageHeight}px`,
+        maxHeight: "70vh",
+        maxWidth: "100vw",
         border: "1px solid black",
         backgroundRepeat: "no-repeat",
         backgroundPosition: `${props.backgroundX}%` + " " + `${props.backgroundY}%`,
@@ -45,13 +49,14 @@ export default (props) => (
         default={ {
           x: 0,
           y: 0,
-          width: 400,
-          height: 400
+          width: 250,
+          height: 250
         } }
-        minWidth={ 320 }
-        minHeight={ 320 }
+        minWidth={ 200 }
+        minHeight={ 200 }
         lockAspectRatio={ 1 / 1 }
         bounds="parent"
+
       >
         <MoveyBox
           opacity={ props.opacity }

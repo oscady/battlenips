@@ -4,7 +4,7 @@ import { ImageButtonStyled } from './ImageButton.styled';
 const ImageButton = (props) => {
   return (
     <ImageButtonStyled>
-      <button>select image</button>
+      <button onClick={ () => props.setOpen(!props.open) }>select image</button>
       <input onChange={ props.handleChange } type="file" name={ props.name } />
     </ImageButtonStyled>
   );

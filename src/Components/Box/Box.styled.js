@@ -9,7 +9,7 @@ export const BoxStyled = styled.div`
  flex-direction: row;
 
  span {
-   width: 100%;
+   width: 10%;
    height: 100%;
    border: 1px solid black;
    display: flex;
@@ -17,7 +17,7 @@ export const BoxStyled = styled.div`
    align-items: center;
    background-color: transparent;
    color: black;
-   font-size: ${props => props.fontSize};
+   font-size: "${props => props.fontSize}px";
 
  }
 `;

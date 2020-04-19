@@ -12,20 +12,30 @@ export const InfoComponentStyled = styled.div`
   justify-content: center;
   background-color: #E5D0D0;
 
+}
+  div {
+    height: auto;
+    align-items: flex-start;
+  justify-content: center;
+  background-color: #E5D0D0;
+  overflow:scroll;
+  ::-webkit-scrollbar {
+    display: none;
+};
+  }
   h2 {
     padding: 20px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 
-  span {
-    font-size: 18px;
-    font-weight: bold;
-  }
   p {
     font-size: 18px;
     color: black;
     letter-spacing: 1.7px;
+    line-height: 1.6;
     text-align: left;
+    margin-bottom: 10px;
   }
 `;

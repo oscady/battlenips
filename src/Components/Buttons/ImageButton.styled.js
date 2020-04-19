@@ -6,6 +6,7 @@ export const ImageButtonStyled = styled.div`
   display: inline-block;
 
   button {
+  
     border: 2px solid gray;
     color: gray;
     background-color: white;
@@ -14,6 +15,11 @@ export const ImageButtonStyled = styled.div`
     font-size: 20px;
     font-weight: bold;
     width: 180px;
+    z-index: 150;
+    margin: 5px;
+    @media(max-width: 900px) {
+      margin-top: 10px
+    }
   }
 
   input {

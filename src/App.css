@@ -5,15 +5,20 @@
   overflow: hidden;
 }
 
+html, body {
+  min-width: 370px;
+}
+
 .App {
   text-align: center;
   flex-direction: column;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh !important;
+  width: 100vw;
   font-family: monospace;
   background-color: #491759;
-  min-width: 1000px;
+  min-width: 370px
 }
 
 .App-logo {
@@ -36,7 +41,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  min-width: 700px;
 }
 
 .App-link {
@@ -89,3 +93,4 @@
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
