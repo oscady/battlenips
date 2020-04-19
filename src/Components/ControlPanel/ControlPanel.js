@@ -8,8 +8,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  flex-grow: 1;
-  flex-direction: row;
+  width: 32%;  flex-direction: row;
 
   @media(max-width:900px) {
     flex-direction: column;
@@ -56,23 +55,25 @@ class ControlPanel extends Component {
             handleChange={ this.props.handleChange }>
           </PanelItem>
         </Container>
-        {/* <PanelItem
-          title="image height"
-          name="backgroundHeight"
-          min={ 50 }
-          max={ 200 }
-          value={ this.props.backgroundHeight }
-          handleChange={ this.props.handleChange }>
-        </PanelItem>
-        <PanelItem
-          title="image width"
-          name="backgroundWidth"
-          min={ 50 }
-          max={ 200 }
-          value={ this.props.backgroundWidth }
-          handleChange={ this.props.handleChange }>
-        </PanelItem> */}
-        <Input imageHeight={ this.props.imageHeight } imageWidth={ this.props.imageWidth } handleChange={ this.props.handleChange } />
+        <Container>
+          <PanelItem
+            title="canvas height"
+            name="backgroundHeight"
+            min={ 200 }
+            max={ 1000 }
+            value={ this.props.backgroundHeight }
+            handleChange={ this.props.handleChange }>
+          </PanelItem>
+          <PanelItem
+            title="canvas width"
+            name="backgroundWidth"
+            min={ 200 }
+            max={ 1000 }
+            value={ this.props.backgroundWidth }
+            handleChange={ this.props.handleChange }>
+          </PanelItem>
+        </Container>
+        {/* <Input imageHeight={ this.props.imageHeight } imageWidth={ this.props.imageWidth } handleChange={ this.props.handleChange } /> */ }
       </ControlPanelStyled>
     );
   }

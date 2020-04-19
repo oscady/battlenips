@@ -34,8 +34,8 @@ export default (props) => (
       style={ {
         margin: "0",
         backgroundImage: `url(${props.background})`,
-        width: `${props.imageWidth}px`,
-        height: `${props.imageHeight}px`,
+        width: `${props.backgroundWidth}px`,
+        height: `${props.backgroundHeight}px`,
         maxHeight: "100%",
         maxWidth: "100vw",
         border: "1px solid black",
