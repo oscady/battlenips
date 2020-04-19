@@ -150,7 +150,7 @@ class Body extends Component {
           imageHeight={ this.state.imageHeight }
           imageWidth={ this.state.imageWidth }
         />
-        }
+
         <div style={ { width: "100vw", height: "20vh", float: "left", display: "inline-block" } } />
         <ControlPanel
           min={ this.state.minOpacity }
