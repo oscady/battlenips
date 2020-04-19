@@ -35,7 +35,7 @@ class Body extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: true,
+      modal: false,
       menu: false,
       landscape: true,
       minOpacity: 0,
@@ -55,6 +55,12 @@ class Body extends Component {
     };
   }
 
+  componentDidMount = () => {
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
   toggleLandscape = () => {
     const ver = this.state.imageHeight;
     const lan = this.state.imageWidth;
