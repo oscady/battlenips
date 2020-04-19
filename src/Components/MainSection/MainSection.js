@@ -20,7 +20,7 @@ class MainSection extends Component {
   render() {
     return (
       <MainSectionStyled>
-        { this.props.modal ? <InfoComponent /> :
+        { this.props.modal ? <InfoComponent toggleModal={ this.props.toggleModal } /> :
           <Image
             name="imageSelect"
             landscape={ this.props.landscape }

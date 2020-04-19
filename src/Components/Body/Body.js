@@ -55,7 +55,6 @@ class Body extends Component {
     };
   }
 
-
   toggleLandscape = () => {
     const ver = this.state.imageHeight;
     const lan = this.state.imageWidth;
@@ -132,6 +131,7 @@ class Body extends Component {
         />
         <Title />
         <MainSection
+          toggleModal={ this.toggleInfo }
           modal={ this.state.modal }
           landscape={ this.state.landscape }
           opacity={ this.state.opacityValue }

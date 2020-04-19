@@ -16,7 +16,6 @@ export const InfoComponentStyled = styled.div`
     padding:15px;
   }
 
-}
   div {
     height: auto;
     align-items: flex-start;
@@ -25,8 +24,17 @@ export const InfoComponentStyled = styled.div`
   overflow:scroll;
   ::-webkit-scrollbar {
     display: none;
-};
+}
   }
+
+  h1 {
+    float:left;
+    padding: 10px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+
   h2 {
     padding: 20px;
     text-align: center;

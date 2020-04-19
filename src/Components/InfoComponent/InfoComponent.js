@@ -1,10 +1,11 @@
 import React from 'react';
 import { InfoComponentStyled } from './InfoComponent.styled';
 
-const InfoComponent = () => {
+const InfoComponent = (props) => {
   return (
     <InfoComponentStyled>
       <div>
+        <h1 onClick={ props.toggleModal }>X</h1>
         <h2>things about this app</h2>
         <p style={ { fontWeight: "bold" } }>1. usage</p>
         <p>load your image with the select image button, then adjust the cavas size, scale of the image and x/y positioning to get the best ratio for your desired fit or aspect ratio. The number box doesn't go any smaller than 200px so keep that in mind for readability.</p>
