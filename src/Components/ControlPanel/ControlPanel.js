@@ -8,7 +8,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  width: 32%;  flex-direction: row;
+  width: 32%;
+    flex-direction: row;
 
   @media(max-width:900px) {
     flex-direction: column;

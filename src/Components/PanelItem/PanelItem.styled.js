@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PanelItemStyled = styled.div`
   width: 100%;
-  height: 100%;
+  height: 50%;
   padding: 10px;
   display: flex;
   flex-direction: column;
