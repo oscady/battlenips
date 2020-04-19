@@ -18,7 +18,8 @@ html, body {
   flex-direction: column;
   display: flex;
   align-items: center;
-  height: 100vh !important;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100vw;
   font-family: monospace;
   background-color: #491759;

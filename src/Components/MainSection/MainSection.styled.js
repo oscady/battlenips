@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const MainSectionStyled = styled.div`
  width: 100vw;
- height: 70vh;
+ height: 70%;
  position: absolute;
- top: 10vh;
- bottom: 20vh;
+ top: 10%;
+ bottom: 20%;
  display: flex;
  flex-direction: column;
  align-items: center;

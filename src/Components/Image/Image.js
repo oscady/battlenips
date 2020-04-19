@@ -36,7 +36,7 @@ export default (props) => (
         backgroundImage: `url(${props.background})`,
         width: `${props.imageWidth}px`,
         height: `${props.imageHeight}px`,
-        maxHeight: "70vh",
+        maxHeight: "100%",
         maxWidth: "100vw",
         border: "1px solid black",
         backgroundRepeat: "no-repeat",
