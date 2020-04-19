@@ -44,7 +44,7 @@ export default (props) => (
         backgroundSize: `${props.imageScale}%`
       } }
     >
-
+      <p style={ { backgroundColor: "white", width: "object-fit", float: "left", opacity: 0.7 } }>r/battlenips</p>
       <Rnd
         default={ {
           x: 0,
