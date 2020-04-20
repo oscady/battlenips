@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { ControlPanelStyled } from './ControlPanel.styled';
 import PanelItem from '../PanelItem/PanelItem';
-import ImageSelect from '../ImageSelect/ImageSelect';
-import Input from '../Input/Input';
-import ButtonComponent from '../Buttons/ButtonComponent';
 import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
   width: 32%;
-    flex-direction: row;
+  flex-direction: row;
 
   @media(max-width:900px) {
     flex-direction: column;
@@ -22,7 +19,7 @@ class ControlPanel extends Component {
       <ControlPanelStyled>
         <Container>
           <PanelItem
-            title="box opacity"
+            title="canvas scale"
             name="opacitySlider"
             min={ this.props.minOpacity }
             max={ this.props.maxOpacity }

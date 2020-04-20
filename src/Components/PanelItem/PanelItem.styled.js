@@ -11,6 +11,7 @@ export const PanelItemStyled = styled.div`
   background-color: "rgba(050,050,050,0.5)";
   height: 80%;
   margin: 5px auto;
+  color: #e2e2e2;
 
   h2 {
     color: #e2e2e2;

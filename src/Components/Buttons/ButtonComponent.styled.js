@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonComponentStyled = styled.div`
-   width: 30%;
+  width: 30%;
   height: 100%;
   padding: 10px;
   display: flex;
@@ -11,7 +11,7 @@ export const ButtonComponentStyled = styled.div`
   background-color: "rgba(050,050,050,0.5)";
   height: 100%;
   width: auto;
-  margin: 5px auto;
+  margin: 0 auto;
   flex-grow: 1;
   position: absolute;
   z-index: 40;
@@ -20,6 +20,5 @@ export const ButtonComponentStyled = styled.div`
     flex-direction: column;
     height: 200px !important;
     justify-content: center;
-    margin-top: 10px;
   }
 `;

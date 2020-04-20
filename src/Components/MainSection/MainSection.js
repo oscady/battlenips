@@ -19,7 +19,7 @@ class MainSection extends Component {
 
   render() {
     return (
-      <MainSectionStyled>
+      <MainSectionStyled zoom={ this.props.opacity }>
         { this.props.modal ? <InfoComponent toggleModal={ this.props.toggleModal } /> :
           <Image
             name="imageSelect"

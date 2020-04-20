@@ -13,6 +13,7 @@ class PanelItem extends Component {
           handleChange={ this.props.handleChange }
           min={ this.props.min }
           max={ this.props.max } />
+        <p>{ this.props.value }</p>
       </PanelItemStyled>
     );
   }

@@ -9,7 +9,7 @@ html, body {
   min-width: 370px;
 }
 
-html, body {
+#root {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
@@ -19,7 +19,7 @@ html, body {
   flex-direction: column;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100%;
   min-height: -webkit-fill-available;
   width: 100vw;
   font-family: monospace;
@@ -67,7 +67,7 @@ html, body {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
+  height: 20px; /* Specified height */
   background: blueviolet; /* Grey background */
   border: 1px solid white;
   border-radius: 15px;
@@ -86,17 +86,17 @@ html, body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
   background: black; /* Black background */
   border-radius: 50%;
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #4CAF50; /* Green background */
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: black; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 

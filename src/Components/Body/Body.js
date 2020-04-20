@@ -40,7 +40,7 @@ class Body extends Component {
       landscape: true,
       minOpacity: 0,
       maxOpacity: 1,
-      opacityValue: 1,
+      opacityValue: 0.3,
       minFont: 10,
       maxFont: 22,
       fontValue: 36,
