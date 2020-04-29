@@ -11,6 +11,7 @@ const Slider = (props) => {
       max={ props.max }
       value={ props.value }
       onChange={ props.handleChange }
+      style={ { marginBottom: "5px" } }
     />
   );
 };

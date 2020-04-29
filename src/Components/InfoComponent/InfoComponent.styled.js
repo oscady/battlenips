@@ -29,10 +29,14 @@ export const InfoComponentStyled = styled.div`
 
   h1 {
     float:left;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     background-color: rgba(0,0,0,0.5);
     cursor: pointer;
+
+    @media(max-width: 900px) {
+      font-size: 16px
+    }
   }
 
   h2 {
