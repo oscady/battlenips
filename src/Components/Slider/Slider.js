@@ -6,6 +6,7 @@ const Slider = (props) => {
       name={ props.name }
       type="range"
       className="slider"
+      step={ props.opacity ? "0.1" : "1" }
       min={ props.min }
       max={ props.max }
       value={ props.value }

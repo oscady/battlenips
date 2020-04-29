@@ -1,7 +1,6 @@
 import React from "react";
 import { Rnd } from "react-rnd";
 import Box from "../Box/Box";
-import fitty from 'fitty';
 
 const MoveyBox = props => (
   <div

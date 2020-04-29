@@ -3,12 +3,12 @@ import { StyledInput } from './Input.styled';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 30%;
+  width: 32%;
   height: 100%;
-  padding: 10px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: "rgba(050,050,050,0.5)";
   height: 100%;

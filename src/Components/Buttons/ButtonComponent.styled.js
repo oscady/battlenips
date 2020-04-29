@@ -18,7 +18,7 @@ export const ButtonComponentStyled = styled.div`
 
   @media(max-width: 900px) {
     flex-direction: column;
-    height: 200px !important;
+ 
     justify-content: center;
   }
 `;

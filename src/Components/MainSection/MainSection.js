@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import Image from '../Image/Image';
+import SvgContainer from './SvgContainer';
 import InfoComponent from '../InfoComponent/InfoComponent';
 import { MainSectionStyled } from '../MainSection/MainSection.styled';
 import styled from 'styled-components';
+import Image from '../Image/Image';
 
 const ResponsiveDiv = styled.div`
   max-width: 100vw;
@@ -22,7 +23,7 @@ class MainSection extends Component {
       <MainSectionStyled zoom={ this.props.opacity }>
         { this.props.modal ? <InfoComponent toggleModal={ this.props.toggleModal } /> :
           <Image
-            name="imageSelect"
+            scale={ this.props.scale }
             landscape={ this.props.landscape }
             opacity={ this.props.opacity }
             fontSize={ this.props.fontValue }

@@ -40,7 +40,7 @@ class Body extends Component {
       landscape: true,
       minOpacity: 0,
       maxOpacity: 1,
-      opacityValue: 0.3,
+      opacityValue: 0,
       minFont: 10,
       maxFont: 22,
       fontValue: 36,
@@ -51,8 +51,12 @@ class Body extends Component {
       imageWidth: 400,
       backgroundX: 50,
       backgroundY: 50,
-      imageScale: 100
+      imageScale: 100,
+      scaleSlider: 100,
+      minScale: 50,
+      maxScale: 150
     };
+
   }
 
   toggleLandscape = () => {
@@ -69,14 +73,12 @@ class Body extends Component {
     this.setState({
       modal: !this.state.modal
     });
-    console.log("clicked");
   };
 
   toggleMenu = () => {
     this.setState({
       menu: !this.state.menu
     });
-    console.log(this.state.menu);
   };
 
   handleChange = (e) => {
@@ -84,18 +86,13 @@ class Body extends Component {
     switch (e.target.name) {
       case 'imageSelect':
         this.setState({
-          background: URL.createObjectURL(e.target.files[0])
+          background: URL.createObjectURL(e.target.files[0]),
+          menu: false
         });
-
-        break;
-      case 'imageScale': {
-        this.setState({
-          imageScale: e.target.value
-        });
-      }
         break;
       case 'opacitySlider':
-        this.setState({ opacityValue: e.target.value / 100 });
+        this.setState({ opacityValue: e.target.value });
+        break;
       default:
         this.setState({
           [e.target.name]: e.target.value
@@ -103,18 +100,24 @@ class Body extends Component {
     }
   };
 
+  zoom(scale) {
+    let accScale = this.state.scale;
+    accScale = accScale + scale;
+    this.setState({ scale: accScale });
+  }
+
   takeSnapshot = () => {
     const opacit = () => {
       this.setState({ opacityValue: 1 });
     };
     html2canvas(document.querySelector("#capture"), { logging: true, letterRendering: 1, allowTaint: false, useCORS: true }).then(canvas => {
-      saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-answer.jpeg' + (new Date).getTime());
+      saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-answer-' + (new Date).getTime() + '.jpeg');
     })
       .then(function () {
         opacit();
       }).then(function () {
         html2canvas(document.querySelector("#capture"), { logging: true, letterRendering: 1, allowTaint: false, useCORS: true }).then(canvas => {
-          saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-question.jpeg' + (new Date).getTime());
+          saveAs(canvas.toDataURL('image/jpeg'), 'battlenips-question-' + (new Date).getTime() + '.jpeg');
         });
       });
   };
@@ -128,9 +131,11 @@ class Body extends Component {
           toggleLandscap={ this.toggleLandscape }
           handleChange={ this.handleChange }
           toggleMenu={ this.toggleMenu }
+          menu={ this.state.menu }
         />
         <Title />
         <MainSection
+          scale={ this.state.scaleSlider }
           toggleModal={ this.toggleInfo }
           modal={ this.state.modal }
           landscape={ this.state.landscape }
@@ -148,8 +153,9 @@ class Body extends Component {
 
         <div style={ { width: "100vw", height: "20vh", float: "left", display: "inline-block" } } />
         <ControlPanel
-          min={ this.state.minOpacity }
-          max={ this.state.maxOpacity }
+          scale={ this.state.scaleSlider }
+          minOpacity={ this.state.minOpacity }
+          maxOpacity={ this.state.maxOpacity }
           value={ this.state.opacityValue }
           handleChange={ this.handleChange }
           landscape={ this.state.landcape }

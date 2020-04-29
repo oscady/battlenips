@@ -1,10 +1,10 @@
 import React, { Compoonent } from 'react';
 import { ImageButtonStyled } from './ImageButton.styled';
 
-const ImageButton = (props) => {
+const ImageButton = (props, open, setOpen) => {
   return (
     <ImageButtonStyled>
-      <button onClick={ () => props.setOpen(!props.open) }>select image</button>
+      <button onClick={ () => setOpen(!open) }>select image</button>
       <input onChange={ props.handleChange } type="file" name={ props.name } />
     </ImageButtonStyled>
   );

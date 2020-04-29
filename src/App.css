@@ -24,7 +24,7 @@ html, body {
   width: 100vw;
   font-family: monospace;
   background-color: #491759;
-  min-width: 370px
+  min-width: 320px
 }
 
 .App-logo {
@@ -66,8 +66,8 @@ html, body {
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 20px; /* Specified height */
+  width: 90%; /* Full-width */
+  height: 15px; /* Specified height */
   background: blueviolet; /* Grey background */
   border: 1px solid white;
   border-radius: 15px;
@@ -86,16 +86,16 @@ html, body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 20px; /* Set a specific slider handle width */
-  height: 20px; /* Slider handle height */
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
   background: black; /* Black background */
   border-radius: 50%;
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 20px; /* Set a specific slider handle width */
-  height: 20px; /* Slider handle height */
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
   background: black; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }

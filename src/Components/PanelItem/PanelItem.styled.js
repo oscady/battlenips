@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const PanelItemStyled = styled.div`
   width: 100%;
-  height: 50%;
-  padding: 10px;
+  height: fit-content;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: "rgba(050,050,050,0.5)";
-  height: 80%;
   margin: 5px auto;
   color: #e2e2e2;
 
@@ -20,7 +19,7 @@ export const PanelItemStyled = styled.div`
     white-space: nowrap;
     margin-bottom: 5px;
     @media(max-width:900px) {
-      font-size: 4vw
+      font-size: 12px
     }
   }
 `;

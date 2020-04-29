@@ -19,13 +19,22 @@ class ControlPanel extends Component {
       <ControlPanelStyled>
         <Container>
           <PanelItem
-            title="canvas scale"
+            title="opacity"
             name="opacitySlider"
             min={ this.props.minOpacity }
             max={ this.props.maxOpacity }
-            value={ this.props.opacityValue }
+            value={ this.props.opacity }
+            opacity={ true }
             handleChange={ this.props.handleChange }>
           </PanelItem>
+          {/* <PanelItem
+            title="canvas scale"
+            name="scaleSlider"
+            min={ this.props.minScale }
+            max={ this.props.maxScale }
+            value={ this.props.scale }
+            handleChange={ this.props.handleChange }>
+          </PanelItem> */}
           <PanelItem
             title="image scale"
             name="imageScale"
@@ -40,7 +49,7 @@ class ControlPanel extends Component {
             title="image x"
             name="backgroundX"
             min={ 0 }
-            max={ 150 }
+            max={ 100 }
             value={ this.props.backgroundX }
             handleChange={ this.props.handleChange }>
           </PanelItem>
@@ -48,7 +57,7 @@ class ControlPanel extends Component {
             title="image y"
             name="backgroundY"
             min={ 0 }
-            max={ 150 }
+            max={ 100 }
             value={ this.props.backgroundY }
             handleChange={ this.props.handleChange }>
           </PanelItem>
